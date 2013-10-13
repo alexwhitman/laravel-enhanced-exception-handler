@@ -1,0 +1,25 @@
+{
+    "name": "alexwhitman/enhanced-exception-handler",
+    "description": "Enhanced exception handler for Laravel",
+    "keywords": ["laravel", "exceptions"],
+    "homepage": "http://github.com/alexwhitman/laravel-enhanced-exception-handler",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alex Whitman",
+            "email": "alex@alexwhitman.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/exception": "4.0.x",
+        "illuminate/foundation": "4.0.x",
+        "illuminate/support": "4.0.x"
+    },
+    "autoload": {
+        "psr-0": {
+            "AlexWhitman\\EnhancedExceptionHandler": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
