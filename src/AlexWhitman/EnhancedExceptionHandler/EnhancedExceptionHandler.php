@@ -28,8 +28,6 @@ class EnhancedExceptionHandler extends Handler {
 		if ( ! is_null($response) && ! $response instanceof \Exception)
 		{
 			$response = $this->prepareResponse($response);
-
-			$response->send();
 		}
 
 		// If no response was sent by this custom exception handler, we will call the
@@ -37,10 +35,10 @@ class EnhancedExceptionHandler extends Handler {
 		// it show the exception to the user / developer based on the situation.
 		else
 		{
-			$this->displayException($response);
+			$response = $this->displayException($response);
 		}
 
-		$this->bail();
+		return $this->sendResponse($response);
 	}
 
 	/**
