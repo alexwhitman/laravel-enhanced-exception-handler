@@ -52,6 +52,10 @@ To use the new `Application` object, update `bootstrap/start.php` and replace
 
 ## Changelog
 
+### 1.1.1
+
+- Fix for laravel/framework >= 4.1.25
+
 ### 1.1.0
 
 - Update for Laravel 4.1

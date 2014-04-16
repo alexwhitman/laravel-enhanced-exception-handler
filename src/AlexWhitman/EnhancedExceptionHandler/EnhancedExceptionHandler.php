@@ -38,7 +38,7 @@ class EnhancedExceptionHandler extends Handler {
 			$response = $this->displayException($response);
 		}
 
-		return $this->sendResponse($response);
+		return $this->prepareResponse($response);
 	}
 
 	/**
