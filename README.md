@@ -38,7 +38,7 @@ same type of exception is seen more than once.
 
 Add `alexwhitman/enhanced-exception-handler` to the `require` section of your `composer.json` file.
 
-`"alexwhitman/enhanced-exception-handler": "1.1.x"`
+`"alexwhitman/enhanced-exception-handler": "1.2.x"`
 
 Run `composer update` to install the latest version.
 
@@ -51,6 +51,10 @@ To use the new `Application` object, update `bootstrap/start.php` and replace
 `$app = new Illuminate\Foundation\Application;` with `$app = new AlexWhitman\EnhancedExceptionHandler\Application;`.
 
 ## Changelog
+
+### 1.2.0
+
+- Update for Laravel 4.2
 
 ### 1.1.1
 
